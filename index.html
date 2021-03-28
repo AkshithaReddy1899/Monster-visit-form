@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Monster's visit form</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+    <!--animation-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="src/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="main-heading animate__animated animate__bounce" >Monster's Visit Form</h1>
+        <p class="main-para">Please fill out the form below to book a monsters appointment to visit your home.</p>
+    </header>
+    <form class="form"  method="POST" autocomplete="off" name="google-sheet" class="form-box">
+        <fieldset class="container personal-form">
+            <legend class="personal-legend">Your personal details.</legend>
+            <div class="form-personal">
+            <label for="name" class="label">Name:
+                <input type="text" 
+                   id="text" 
+                   name="name"
+                   class="personal-details" 
+                   placeholder="Name"
+                   required>
+            </label>
+            </div>
+            <div class="form-personal">
+            <label for="e-mail">E-mail:
+                <input type="text" 
+                   id="e-mail" 
+                   name="e-mail" 
+                   class="personal-details" 
+                   placeholder="E-mail"
+                   required>
+            </label>
+            </div>
+            <div class="form-personal">
+            <label for="phone-number">Ph-no:
+                <input type="tel" 
+                   id="phone-number" 
+                   name="phone-number"
+                   class="personal-details"  
+                   placeholder="Phone-Number"
+                   required>
+            </label>
+            </div>
+            <div class="form-personal">
+            <label for="address">Address:
+                <input type="text" 
+                   id="address" 
+                   name="address" 
+                   class="personal-details" 
+                   placeholder="Address"
+                   required>
+            </label>
+            </div>
+        </fieldset>
+        <fieldset class="container">
+            <legend class="monster-legend">About Monster's visit.</legend>
+            <p class="monster-form">
+                <label for="visit">When do you want the monsters to visit you:</label>
+                <input type="date" name="visit" id="date" placeholder="dd/mm/yyyy" class="mon-form mon-form-date">
+            </p>
+            <p class="monster-form">
+                <label for="number">How many monsters do you want?</label>
+                <input type="number" name="number" min="1" max="5" class="mon-form">
+            </p>
+            <p class="monster-form">
+                <label for="scary">How scary do you want your monsters to be? Choose one from the below options</label>
+                <div class="radio">
+                   <input type="radio" class="radio-btn" value="cute"
+                   name="radio" checked>
+                   <label>Cute</label>
+                </div>
+                <div class="radio ">
+                    <input type="radio" value="a little scary"
+                    name="radio" class="radio-btn">
+                    <label>A little scary</label>
+                 </div>
+                 <div class="radio">
+                    <input type="radio" value="a lot scary"
+                    name="radio" class="radio-btn">
+                    <label>A lot scary</label>
+                 </div>
+            
+            <p class="monster-form">
+                <label for="exp">What kind of experience are you looking for?</label>
+                <select class="mon-form" name="exp">
+                    <option disabled hidden selected>select one...
+                    </option>
+                    <option>Dinner with the monster</option>
+                    <option>A day at the library with the monster</option>
+                    <option>Full day with the monster</option>
+                    <option>Know about their lifestyle</option>
+                    <option>To be killed by one</option>
+                </select>
+            </p>
+            <p class="monster-form">
+                <label for="req">Special Requests:</label>
+                <textarea name="req" placeholder="Type in your request here" class="mon-form text-area"></textarea>
+            </p>
+        </fieldset>
+        <input type="submit" class="submit" name="submit" value="Submit.">   
+    </form>
+    <script src="src/index.js"></script>
+</body>
+</html>

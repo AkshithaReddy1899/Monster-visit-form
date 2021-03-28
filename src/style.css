@@ -1,0 +1,162 @@
+
+/*font-family: 'Oswald', sans-serif;*/
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    border:0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    transition: .8s ease;
+}
+::placeholder{
+    color: rgb(82, 60, 60);
+}
+/*General styling*/
+body{
+    background-color: rgb(226, 224, 224);
+}
+/* h1 monsters visit from styling*/
+/*main heading*/
+.main-heading{
+    font-family: 'Stalinist One', cursive;
+}
+/*form*/
+.container{
+    margin: 0 auto 0 auto;
+}
+.personal-legend , .monster-legend{
+   padding: 5%;
+   color: green;
+}
+/*personal details form styling*/
+.personal-details{
+    border-radius: 10px;
+    background-color: rgb(252, 248, 236);
+    outline: none;
+    border: none;
+    color: rgb(4, 206, 4);
+    font-weight: 1rem;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+.personal-details:hover{
+    border: 1px solid rgb(27, 247, 27);
+    transition: .8s ease;
+}
+/*monster form*/
+.mon-form{
+    border-radius: 10px;
+    background-color: rgb(252, 248, 236);
+    outline: none;
+    border: none;
+    padding: 1%;
+    margin: 3%;
+}
+.mon-form:hover{
+    border: 1px solid rgb(27, 247, 27);
+    transition: .8s ease;
+}
+.radio{
+    display:flex;
+    margin: 0 auto 0 auto;
+}
+.radio-btn{
+    margin:1%;
+}
+.checkbox:checked{
+    background-color: green;
+}
+.submit{
+   padding: 10px;
+   border: none;
+   outline: none;
+   background-color: green;
+   border-radius: 5px;
+   color: white;
+   font-weight: bold;
+}
+
+@media only screen and (min-width:100px),(max-width:480px){
+    .main-heading{
+        font-size: x-large;
+        font-weight: 100;
+        color: rgb(10, 75, 10);
+       
+       
+        margin: 20px;
+    }
+    .main-heading, .main-para{
+        text-align: center;
+    }
+    .container{
+        width: 80%;
+    }
+}
+@media only screen and (min-width:481px), (max-width: 768px){
+    body{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .main-heading{
+        margin: 10px;
+        font-size: larger;
+        font-weight: bold;
+       
+        font-size: 2rem;
+    }
+    .form-personal{
+        margin: 10px;
+        padding: 10px;
+    }
+    .personal-legend, .monster-legend{
+        font-size: x-large;
+        font-weight: bold;
+    }
+    .personal-details{
+        padding: 4%;
+    }
+    .radio{
+        margin-left: 50px;
+    }
+}
+@media only screen and (min-width:769px){
+    .main-heading{
+        padding-top:30px;
+    }
+    .main-para{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (min-width:953px){
+    body{
+        font-size: 1.6rem; 
+        padding:0;
+        margin:5px;
+        text-align: center;
+    }
+    .main-heading{
+       padding-top: 50px;
+       animation-duration: .8s;
+       font-size:3rem;
+       font-weight:lighter;
+    }
+    .personal-details{
+        padding:3%;
+    }
+    .personal-form{
+        display: flex;
+    }
+    .main-para{
+        font-size: 1.6rem;
+    }
+    .personal-legend , .monster-legend{
+        font-size:2rem;
+    }
+    .radio{
+        margin-left: 250px;
+    }
+ 
+}
