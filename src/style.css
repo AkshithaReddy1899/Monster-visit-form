@@ -19,6 +19,9 @@ body{
     background-color: rgb(226, 224, 224);
 }
 /* h1 monsters visit from styling*/
+header h1{
+    font-size: 2rem;
+}
 /*main heading*/
 .main-heading{
     font-family: 'Stalinist One', cursive;
